@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.heading h3{
+  display: inline-block;
+  font-size: 24px;
+}
+.heading img{
+  vertical-align: middle;
+  margin-left: 15px;
+  
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex h2{
+  margin-top: 50px;
+}
+
+.history-container ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cloudContainer{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+
+} */
+/* .cloudContainer img{
+  width: 100px;
+  background: transparent;
+  animation-name: cloudrun;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+
+}
+
+@keyframes cloudrun {
+  0%{
+    transform: translateX(-10rem);
+  }
+  100%{
+    transform: translateX(50rem);
+  }
+  
+} */
+
+@media only screen and (max-width: 730px) {
+  .header{
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+  }
+  .heading{
+    margin-bottom: 20px;
+  }
+
+  .historyBtn{
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 477px) {
+  .btnCenter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btnCenter > .btn-container{
+    margin-top: 10px;
+  }
+  
+}
