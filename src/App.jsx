@@ -93,7 +93,7 @@ function App() {
               <h2>Search History:</h2>
               <ul>
                 {searchHistory.map((history, index) => (
-                  <li key={index} onClick={() => handleHistoryClick(history)}>
+                  <li style={{width: 100}} key={index} onClick={() => handleHistoryClick(history)}>
                     <button>
                     {history}
                     </button>
